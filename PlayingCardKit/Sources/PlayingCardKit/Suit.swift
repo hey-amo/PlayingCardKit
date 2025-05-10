@@ -5,7 +5,6 @@
 //  Created by Amarjit on 10/05/2025.
 //
 
-
 /// Enumeration: defines the suit of a traditional playing card.
 public enum Suit: Character, CaseIterable {
     case spades = "♠", hearts = "♡", diamonds = "♢", clubs = "♣"
