@@ -10,7 +10,7 @@ import Foundation
 /// Model for creating a deck of playing cards
 /// 52 cards, 4 suits: clubs, diamonds, spades, clubs, 13 ranks: 2-10, jack, queen, king, ace
 
-public struct Deck: Equatable {
+public struct Deck: Equatable, Codable {
     fileprivate var cards: [PlayingCard]
 
     /// Returns a deck of 52 playing cards.

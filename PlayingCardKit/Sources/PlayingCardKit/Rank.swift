@@ -6,7 +6,7 @@
 //
 
 /// Enumeration: Rank of a traditional playing card.
-public enum Rank: Int, CaseIterable {
+public enum Rank: Int, CaseIterable, Codable {
   case two = 2, three, four, five, six, seven, eight, nine, ten
   case jack, queen, king, ace
 }
