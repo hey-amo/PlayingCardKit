@@ -11,6 +11,12 @@ public struct PlayingCard: Equatable, Hashable, Codable {
     public let suit: Suit
 }
 
+// MARK: Identifiable
+
+extension PlayingCard: Identifiable {
+    public var id: String { "\(rank.rawValue)_of_\(suit.rawValue)" }
+}
+
 // MARK: Comparable
 
 extension PlayingCard: Comparable {
