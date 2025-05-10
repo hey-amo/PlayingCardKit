@@ -10,10 +10,10 @@ import XCTest
 
 final class SuitTests: XCTestCase {
     func testSuitStringEquality() {
-        XCTAssertEqual(String(describing: Suit.spades), "♠︎")
-        XCTAssertEqual(String(describing: Suit.hearts), "♡")
-        XCTAssertEqual(String(describing: Suit.diamonds), "♢")
-        XCTAssertEqual(String(describing: Suit.clubs), "♣︎")
+        XCTAssertEqual(Suit.spades.symbol, "♠")
+        XCTAssertEqual(Suit.hearts.symbol, "♡")
+        XCTAssertEqual(Suit.diamonds.symbol, "♢")
+        XCTAssertEqual(Suit.clubs.symbol, "♣")
     }
     
     func testSuitComparable() {

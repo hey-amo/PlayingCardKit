@@ -8,8 +8,11 @@
 /// Enumeration: defines the suit of a traditional playing card.
 public enum Suit: Character, CaseIterable {
     case spades = "♠", hearts = "♡", diamonds = "♢", clubs = "♣"
+    
+    public var symbol: String {
+        return String(rawValue)
+    }
 }
-
 
 // MARK: Comparison
 
